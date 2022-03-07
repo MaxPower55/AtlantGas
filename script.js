@@ -51,3 +51,10 @@ function hidePopup() {
     wrap.style.userSelect = 'auto';
     popup.style.display = 'none';
 }
+
+var popup__form = document.getElementById('popup__form');
+var popup__btn = document.getElementById('popup__btn');
+popup__btn.addEventListener('click', function() {
+    var url = 'thanks.html';
+    popup__form.action = url;
+}, false);

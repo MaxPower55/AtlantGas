@@ -1,0 +1,191 @@
+:root {
+    --bg-color: #222222;
+    --accent-blue: #2194FF;
+    --accent-orange: #EF5221;
+    --accent-op005: rgba(33, 148, 255, 0.05);
+    --light: #F1F1F1;
+    --light-op07: rgb(241, 241, 241, 0.7);
+    --light-op03: rgba(241, 241, 241, 0.3);
+    --not-active:rgba(241, 241, 241, 0.2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    background: url(img/bg-zavod.png) var(--bg-color);
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    margin: 24px auto 0;
+    width: 1140px;
+}
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__logo {
+    justify-self: center;
+}
+.contakts__tel {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--light);
+    display: block;
+}
+.contakts__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: var(--accent-orange);
+    margin: 5px 55px 0 0;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    margin-top: 26px;
+}
+.main__left {
+    width: 550px;
+}
+.main__header {
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--accent-orange);
+}
+.main__left__percent {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 20px;
+}
+.main__left__percent__left {
+    width: 125px;
+    border-right: 1px solid var(--light-op07);
+}
+.main__left__percent__right {
+    width: 125px;
+}
+.percent__num {
+    font-family: 'Russo One', sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--light-op07);
+}
+.percent__text {
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--light-op07);
+    text-transform: uppercase;
+}
+.main__left__underheader {
+    font-family: 'Russo One', sans-serif;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--light);
+    margin-top: 20px;
+}
+.button__glass {
+    background: url(img/button__glass.svg) no-repeat top 4px left 4px, var(--accent-orange) url(img/button__glass__rotate.svg) no-repeat bottom 4px left 4px;
+    background-size: 98%;
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+    border-radius: 11px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--light);
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    white-space: pre-line;
+    border: 0;
+    transition: 0.4s all ease;
+}
+.button__glass:hover {
+    opacity: 0.9;
+    border: 1px solid var(--accent);
+}
+.button__glass:focus {
+    box-shadow: 0 0 4px 4px var(--light);
+}
+.main__left__button {
+    width: 395px;
+    height: 87px;
+    margin-top: 40px;
+}
+
+.main__right {
+    width: 50%;
+}
+.main__right__img {
+    object-fit: cover;
+    width: 120%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.card {
+    width: 247px;
+    height: 213px;
+    background: rgba(241, 241, 241, 0.2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px 50px;
+    position: relative;
+}
+.card__img {
+    max-width: 50%;
+    position: absolute;
+    top: -10%;
+}
+.card__title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--accent-orange);
+    margin-top: 45px;
+}
+.card__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--light);
+    margin-top: 14px;
+}
+
+.bottom__block {
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+    margin-top: 14px;
+}
+.bottom__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: var(--light);
+}

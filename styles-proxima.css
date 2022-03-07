@@ -1,0 +1,176 @@
+:root {
+    --bg-color: #222222;
+    --accent-blue: #2194FF;
+    --accent-orange: #EF5221;
+    --accent-op005: rgba(33, 148, 255, 0.05);
+    --light: #F1F1F1;
+    --light-op07: rgb(241, 241, 241, 0.7);
+    --light-op03: rgba(241, 241, 241, 0.3);
+    --not-active:rgba(241, 241, 241, 0.2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    background: var(--bg-color);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    margin: 24px auto 0;
+    width: 1140px;
+}
+.header__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__logo {
+    justify-self: center;
+}
+.contakts__tel {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--light);
+    display: block;
+}
+.contakts__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: var(--accent-orange);
+    margin: 5px 55px 0 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    margin-top: 13px;
+}
+.main__left {
+    width: 50%;
+}
+.main__left__header {
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    color: var(--accent-orange);
+}
+.main__left__underheader {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--light);
+    margin-top: 13px;
+}
+.button__glass {
+    background: url(img/button__glass.svg) no-repeat top 4px left 4px, var(--accent-orange) url(img/button__glass__rotate.svg) no-repeat bottom 4px left 4px;
+    background-size: 98%;
+    box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.45);
+    border-radius: 11px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: var(--light);
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+    white-space: pre-line;
+    border: 0;
+    transition: 0.4s all ease;
+}
+.button__glass:hover {
+    opacity: 0.9;
+    border: 1px solid var(--accent);
+}
+.button__glass:focus {
+    box-shadow: 0 0 4px 4px var(--light);
+}
+.main__left__button {
+    width: 395px;
+    height: 87px;
+    margin-top: 27px;
+}
+.main__left__cards {
+    width: 100%;
+    margin-top: 47px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+.main__left__card {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.main__left__card__svg {
+    width: 100%;
+    height: 100%;
+}
+.main__left__card__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--light);
+}
+.main__left__bottom {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__left__bottom__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: var(--light);
+}
+.main__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__right__block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-left: -40px;
+}
+.main__right__img__wrapper {
+    width: 440px;
+}
+.main__right__img {
+    width: 100%;
+    object-fit: cover;
+}
+.main__right__gas {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: var(--accent-blue);
+}
+.main__right__gasname {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--light);
+    text-transform: uppercase;
+}
+.main__right__gas:not(:first-child) {
+    margin-top: 28px;
+}

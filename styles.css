@@ -1,6 +1,7 @@
 :root {
     --bg-color: #222222;
     --accent: #2194FF;
+    --accent-orange: #EF5221;
     --accent-op005: rgba(33, 148, 255, 0.05);
     --light: #F1F1F1;
     --light-op07: rgb(241, 241, 241, 0.7);
@@ -143,7 +144,7 @@
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
     white-space: pre-line;
     border: 0;
-    transition: 0.2s all ease;
+    transition: 0.4s all ease;
 }
 
 .button__glass:hover {
@@ -938,3 +939,37 @@
     width: 361px;
     height: 87px;
 }
+
+.thanks__page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    margin-top: 160px;
+}
+.thanks__header {
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+.thanks__text {
+    font-family: 'Russo One', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--light);
+}
+.thanks__button {
+    width: 361px;
+    height: 87px;
+    margin-top: 25px;
+}
+
+/* СТИЛИ ОДНОСТРАНИЧНИКА 1 */
+
